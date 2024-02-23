@@ -11,8 +11,17 @@
 
 
 % Theme
-% \setbeameroption{show notes}
-% \setbeamertemplate{note page}[plain]
+% \setbeameroption{show notes on second screen}
+% \setbeamercolor{note page}{bg=gray, fg=white}
+% \setbeamertemplate{note page}{%
+%     % adds in bg color
+%         \insertvrule{\paperheight}{note page.bg}%
+%         \vskip-\paperheight%
+%     % changes font color
+%         \usebeamercolor[fg]{note page}%
+%     % inserts note
+%         \insertnote%
+% }
 
 
 \usetheme{AnnArbor}
@@ -33,11 +42,17 @@
 \usepackage[backend=biber, style=apa, citestyle=authoryear]{biblatex}
 % \addbibresource{ref.bib}
 
-\title[Short title]{
-  Long title
+\title[MMoU and cross-listing]{
+  Cross-Border Regulatory Cooperation and Firm Cross-Listing Decisions
 }
 
-\author{FENG Yunlin}
+\author{Xiaoqi Chen \inst{1} \and Yangyang Chen \inst{2} \and Jeffrey Pittman \inst{3} \and Bin Yang \inst{4}}
+\institute[shortinst]{\inst{1} Xiamen University \and
+                      \inst{2} City University of Hong Kong \and
+                      \inst{3} Memorial University and Virgina Tech \and
+                      \inst{4} Jinan University
+                      }
+
 \date{\today}
 
 \AtBeginSection[]
