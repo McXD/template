@@ -8,9 +8,9 @@
 \usepackage{booktabs}
 \usepackage{centernot}
 \usepackage{pgfpages}
+\usepackage{tikz}
 
-
-% Theme
+% Notes
 % \setbeameroption{show notes on second screen}
 % \setbeamercolor{note page}{bg=gray, fg=white}
 % \setbeamertemplate{note page}{%
@@ -46,12 +46,12 @@
   Cross-Border Regulatory Cooperation and Firm Cross-Listing Decisions
 }
 
-\author{Xiaoqi Chen \inst{1} \and Yangyang Chen \inst{2} \and Jeffrey Pittman \inst{3} \and Bin Yang \inst{4}}
-\institute[shortinst]{\inst{1} Xiamen University \and
-                      \inst{2} City University of Hong Kong \and
-                      \inst{3} Memorial University and Virgina Tech \and
-                      \inst{4} Jinan University
-                      }
+\author{Josh Lerner \inst{1} \and Jinlin Li \inst{2} \and Tong Liu \inst{3}}
+\institute[shortinst]{
+  \inst{1} Harvard Business School \and
+  \inst{2} Harvard University \and
+  \inst{3} MIT Sloan School of Management \and
+}
 
 \date{\today}
 
@@ -68,15 +68,16 @@
 
 \begin{frame}
   \titlepage
-  \note<1>{
-    Good afternoon everyone. I'm going to present the paper ... Let's pause at this slide a little bit since I think the title is pretty descriptive about the major elements of this paper.
-    \begin{itemize}
-      \item X: dummy, IFRS adoption, EU countries 2005
-      \item Y: foreign mutual fund ownership. We all known mutual fund ownership - percentage of shares hold by mutual fund. Just add the `foreign' qualifier - funds and companies are not in the same country.
-      \item Relationship: positive. This is expected by the regulators and documented by contemporaneous literature.
-      \item This paper particularly investigates the `comparability channel', which we'll talk in detail.
-    \end{itemize}
-  }
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south east,yshift=5mm,xshift=-5mm] at (current page.south east) {%
+      \begin{minipage}{.5\textwidth}
+        \raggedleft
+        \scriptsize\textit{
+          Posted on SSRN: 27 Nov 2023\
+        }
+      \end{minipage}
+    };
+  \end{tikzpicture}
 \end{frame}
 
 \end{document}
