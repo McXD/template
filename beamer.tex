@@ -1,4 +1,4 @@
-\documentclass[13pt]{beamer}
+\documentclass[13pt, aspectratio=169]{beamer}
 
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -24,26 +24,19 @@
 % }
 
 
-\usetheme{AnnArbor}
-\usecolortheme{beaver}
+\usetheme{metropolis}
 \setbeamertemplate{blocks}[default]
 \setbeamertemplate{itemize items}[ball]
 \setbeamertemplate{frametitle continuation}{}
 \setbeamertemplate{bibliography item}{}
-\setbeamertemplate{footline}{
-  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex]{title in head/foot}
-    \usebeamerfont{title in head/foot}
-    \hspace{1em} \insertshorttitle \hfill \hspace{-18em} \hfill \insertframenumber /\inserttotalframenumber \hspace*{1em}
-  \end{beamercolorbox}
-}
 \beamertemplatenavigationsymbolsempty
 \setbeamertemplate{frametitle continuation}[from second][(Cont.)]
 
 \usepackage[backend=biber, style=apa, citestyle=authoryear]{biblatex}
 % \addbibresource{ref.bib}
 
-\title[MMoU and cross-listing]{
-  Cross-Border Regulatory Cooperation and Firm Cross-Listing Decisions
+\title[Learning by Investing]{
+  Learning by Investing: Entrepreneurial Spillovers from Venture Capital
 }
 
 \author{Josh Lerner \inst{1} \and Jinlin Li \inst{2} \and Tong Liu \inst{3}}
@@ -68,16 +61,9 @@
 
 \begin{frame}
   \titlepage
-  \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=south east,yshift=5mm,xshift=-5mm] at (current page.south east) {%
-      \begin{minipage}{.5\textwidth}
-        \raggedleft
-        \scriptsize\textit{
-          Posted on SSRN: 27 Nov 2023\
-        }
-      \end{minipage}
-    };
-  \end{tikzpicture}
+  \begin{picture}(0,0)
+    \put(290,50){\scriptsize\textit{Posted on SSRN: 27 Nov 2023}}
+  \end{picture}
 \end{frame}
 
 \end{document}
